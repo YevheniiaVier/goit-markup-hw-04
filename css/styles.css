@@ -23,7 +23,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-
   background-color: var(--bg-white-color);
 }
 
@@ -132,19 +131,6 @@ img {
 }
 
 /* ---------------hero --------------*/
-.overlay {
-  /*  
-  justify-content: center;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/mainbgimg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-}
 
 .hero {
   text-align: center;
