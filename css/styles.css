@@ -318,16 +318,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: var(--border-card-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
   border: 1px solid red;
 }
 
-
 .sn-icon {
-  fill: var(--border-card-color);
+  fill: currentColor;
   width: 20px;
   height: 20px;
 }
@@ -337,7 +336,6 @@ img {
 .sn-item:hover .sn-icon {
   fill: var(--white-text-color);
 }
-
 
 .sn-list + .sn-list {
   margin-left: 10px;
