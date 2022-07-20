@@ -322,7 +322,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid red;
 }
 
 .sn-icon {
@@ -331,10 +330,8 @@ img {
   height: 20px;
 }
 .sn-item:hover {
+  color: var(--white-text-color);
   background-color: var(--accent-color);
-}
-.sn-item:hover .sn-icon {
-  fill: var(--white-text-color);
 }
 
 .sn-list + .sn-list {
@@ -344,6 +341,7 @@ img {
 
 .clients-list {
   display: flex;
+  justify-content: center;
 }
 .item-client + .item-client {
   margin-left: var(--card-gap);
@@ -355,6 +353,10 @@ img {
   border: 1px solid var(--border-card-color);
   border-radius: 4px;
 }
+
+/* .client-thumb {
+display: block
+} */
 
 /* ----------------footer -------------------*/
 footer {
