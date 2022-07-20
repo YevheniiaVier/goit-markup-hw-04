@@ -205,8 +205,16 @@ img {
 }
 
 /*---------------- preferences--------------- */
+.preferences-icons {
+  display: ;
+  width: 270px;
+  height: 120px;
+object-position: ce;
+  background-color: var(--accent-background-color);
+  margin-bottom: var(--card-gap);
+}
 
-.preferences-item::before {
+/* .preferences-item::before {
   display: block;
   content: '';
   height: 120px;
@@ -230,7 +238,7 @@ img {
 
 .icon-astronaut::before {
   background-image: url(../images/icons/astronaut.svg);
-}
+} */
 
 .preferences {
   display: flex;
@@ -320,10 +328,11 @@ img {
   line-height: 1.18;
   text-align: center;
 }
-.social-networks {
-  /* display: flex; */
-}
-.facebook {
+/* .social-networks {
+  display: flex;
+} */
+
+/* .facebook {
   margin-right: 50px;
   margin-left: 10px;
   margin-bottom: ;
@@ -335,8 +344,9 @@ img {
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: center;
-}
-/* ----------------------Clients-------------------- */
+} */
+
+/* ----------------------Clients--------------------  */
 
 .clients-list {
   display: flex;
