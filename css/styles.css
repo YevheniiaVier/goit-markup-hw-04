@@ -209,7 +209,7 @@ img {
   display: ;
   width: 270px;
   height: 120px;
-object-position: ce;
+
   background-color: var(--accent-background-color);
   margin-bottom: var(--card-gap);
 }
