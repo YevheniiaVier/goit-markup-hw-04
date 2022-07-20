@@ -312,10 +312,8 @@ img {
 .social-networks {
   display: flex;
   justify-content: center;
- 
 }
 
-  
 .sn-item {
   display: flex;
   justify-content: center;
@@ -324,26 +322,28 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid red
+  border: 1px solid red;
 }
 
-.sn-icon {
+/* .sn-icon {
   width: 20px;
   height: 20px;
   fill: orange;
-}
+} */
 .sn-list + .sn-list {
   margin-left: 10px;
 }
-.sn-item:hover {
-  background-color: var(--accent-color) ;
-}
-.sn-icon:hover {
+
+/* .sn-icon:hover {
   fill: var(--white-text-color);
-}
+} */
 
 .sn-item:hover {
-  background-color: var(--accent-color) ;
+  background-color: var(--accent-color);
+}
+
+.sn-item:hover .sn-icon {
+  fill: var(--white-text-color);
 }
 
 .sn-icon {
@@ -351,10 +351,9 @@ img {
   width: 20px;
   height: 20px;
 }
-.sn-icon:hover {
+/* .sn-icon:hover {
   fill: var(--white-text-color);
-} 
-
+}  */
 
 /* ----------------------Clients--------------------  */
 
