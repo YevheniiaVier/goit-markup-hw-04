@@ -206,7 +206,9 @@ img {
 
 /*---------------- preferences--------------- */
 .preferences-icons {
-  display: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
 
@@ -217,31 +219,6 @@ img {
   width: 70px;
   height: 70px;
 }
-/* .preferences-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--accent-background-color);
-
-  margin-bottom: 30px;
-}
-.icon-antenna::before {
-  background-image: url(../images/icons/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/icons/clock.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/icons/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/icons/astronaut.svg);
-} */
 
 .preferences {
   display: flex;
@@ -300,7 +277,7 @@ img {
 }
 .team-set {
   display: flex;
- }
+}
 .team-card {
   width: calc((100% - (3 * var(--card-gap))) / 4);
   box-shadow: var(--team-card-shadow);
@@ -335,36 +312,49 @@ img {
 .social-networks {
   display: flex;
   justify-content: center;
+ 
 }
+
+  
 .sn-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid red;
-
+  border: 1px solid red
 }
 
-.sn-item + .sn-item {
-  margin-left: 10px;
-}
 .sn-icon {
   width: 20px;
   height: 20px;
+  fill: orange;
+}
+.sn-list + .sn-list {
+  margin-left: 10px;
+}
+.sn-item:hover {
+  background-color: var(--accent-color) ;
+}
+.sn-icon:hover {
+  fill: var(--white-text-color);
 }
 
-/* .facebook {
-  margin-right: 50px;
-  margin-left: 10px;
-  margin-bottom: ;
-  height: 44px;
-  width: 44px;
-  background-color: red;
-  border-radius: 50%;
-  background-image: url(../images/icons/facebook.svg);
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: center;
-} */
+.sn-item:hover {
+  background-color: var(--accent-color) ;
+}
+
+.sn-icon {
+  fill: var(--border-card-color);
+  width: 20px;
+  height: 20px;
+}
+.sn-icon:hover {
+  fill: var(--white-text-color);
+} 
+
 
 /* ----------------------Clients--------------------  */
 
