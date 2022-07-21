@@ -331,24 +331,32 @@ img {
 
 /* ----------------------Clients--------------------  */
 
+.client-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 170px;
+  border: 1px solid var(--border-card-color);
+  border-radius: 4px;
+  color: var(--border-card-color);
+}
+
 .clients-list {
   display: flex;
   justify-content: center;
   gap: var(--card-gap);
 }
 
-.item-client {
-  padding: 16px 32px;
-  height: 92px;
-  width: 170px;
-  border: 1px solid var(--border-card-color);
+.client-thumb:hover {
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
+  color: var(--accent-color);
 }
 
-/* .client-thumb {
-display: block
-} */
-
+.client-icon {
+  fill: currentColor;
+}
 /* ----------------footer -------------------*/
 footer {
   padding-top: 60px;
