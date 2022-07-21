@@ -114,17 +114,28 @@ img {
   margin-left: auto;
 }
 .contacts-nav .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .contacts-nav .link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
+
+.envelope {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
   color: var(--accent-color);
@@ -313,10 +324,18 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--border-card-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+
+.main-sn .sn-item {
+  color: var(--border-card-color);
+}
+
+.footer-sn .sn-item {
+  color: var(--white-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .sn-icon {
@@ -324,11 +343,13 @@ img {
   width: 20px;
   height: 20px;
 }
-.sn-item:hover {
+.main-sn .sn-item:hover {
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
-
+.footer-sn .sn-item:hover {
+  background-color: var(--accent-color);
+}
 /* ----------------------Clients--------------------  */
 
 .client-thumb {
@@ -388,6 +409,23 @@ footer {
   color: var(--accent-color);
 }
 
+footer .bottom {
+  display: flex;
+  gap: 70px;
+}
+.connect {
+  min-width: 206px;
+  min-height: 80px;
+  margin-top: 12px;
+}
+.links-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
 /* ----------------portfolio button---------------- */
 
 .btn.secondary {
