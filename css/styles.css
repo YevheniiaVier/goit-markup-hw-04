@@ -196,6 +196,7 @@ img {
 .btn.primary:focus {
   color: var(--white-text-color);
   background-color: var(--hover-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* -----------section ------------------*/
@@ -216,16 +217,16 @@ img {
 }
 
 /*---------------- preferences--------------- */
+
 .preferences-icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
-
   background-color: var(--accent-background-color);
   margin-bottom: var(--card-gap);
 }
+
 .preferences-icons svg {
   width: 70px;
   height: 70px;
@@ -238,6 +239,7 @@ img {
 }
 .preferences-item {
   width: calc((100% - (3 * var(--card-gap))) / 4);
+  heigh
 }
 
 .preferences .title {
@@ -355,11 +357,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 92px;
-  width: 170px;
+  height: inherit;
+  
   border: 1px solid var(--border-card-color);
   border-radius: 4px;
   color: var(--border-card-color);
+}
+.item-client {
+  width: calc(100% / 6);
+  height: 92px;
 }
 
 .clients-list {
@@ -410,12 +416,13 @@ footer {
 
 footer .bottom {
   display: flex;
-  gap: 70px;
+
 }
 .connect {
   min-width: 206px;
   min-height: 80px;
   margin-top: 12px;
+  margin-left: 70px;
 }
 .links-title {
   margin-bottom: 20px;
