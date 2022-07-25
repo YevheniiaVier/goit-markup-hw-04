@@ -364,7 +364,7 @@ img {
   color: var(--border-card-color);
 }
 .item-client {
-  width: calc(100% / 6);
+  width: calc(100% - (5 * var(--card-gap)) / 6 );
   height: 92px;
 }
 
