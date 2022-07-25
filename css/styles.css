@@ -103,6 +103,7 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+ 
 }
 .link.current {
   color: var(--accent-color);
@@ -127,14 +128,11 @@ img {
   align-items: center;
 }
 
-.envelope {
+.envelope, .smartphone {
   margin-right: 10px;
   fill: currentColor;
 }
-.smartphone {
-  margin-right: 10px;
-  fill: currentColor;
-}
+
 
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
@@ -319,6 +317,7 @@ img {
 .social-networks {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -335,20 +334,15 @@ img {
   color: var(--border-card-color);
 }
 
-.footer-sn .sn-item {
-  color: var(--white-text-color);
-  background-color: rgba(255, 255, 255, 0.1);
-}
 
-.sn-icon {
+  .sn-icon {
   fill: currentColor;
   width: 20px;
   height: 20px;
 }
-.main-sn .sn-item:hover {
+.main-sn .sn-item:hover,
+.main-sn .sn-item:focus {
   color: var(--white-text-color);
-}
-.sn-item:hover {
   background-color: var(--accent-color);
 }
 /* ----------------------Clients--------------------  */
@@ -374,7 +368,8 @@ img {
   gap: var(--card-gap);
 }
 
-.client-thumb:hover {
+.client-thumb:hover,
+.client-thumb:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   color: var(--accent-color);
@@ -432,6 +427,16 @@ footer .bottom {
   text-transform: uppercase;
   color: var(--white-text-color);
 }
+.footer-sn .sn-item {
+  color: var(--white-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-sn .sn-item:hover,
+.footer-sn .sn-item:focus {
+  background-color: var(--accent-color);
+}
+
 /* ----------------portfolio button---------------- */
 
 .btn.secondary {
@@ -487,7 +492,8 @@ footer .bottom {
   color: inherit;
 }
 
-.work-examples .link:hover {
+.work-examples .link:hover,
+.work-examples .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
